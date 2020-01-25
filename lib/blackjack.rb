@@ -33,13 +33,14 @@ def initial_round
   card_total
 end
 
-def hit?(num)
+def hit?(card_total)
   prompt_user
-  answer = get_user_input
-  if answer = "s"
-    return display_card_total(num)
-  elsif answer = "h"
-    return display_card_total(num)
+  get_user_input
+  if get_user_input = "s"
+    return display_card_total(card_total)
+  elsif get_user_input = "h"
+    card_total += deal_card
+    display_card_total(card_total)
   else
     return invalid_command
   end
