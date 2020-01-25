@@ -38,14 +38,17 @@ def hit?(n)
   get_user_input
   if get_user_input = "s"
     display_card_total(n)
+    n
   elsif get_user_input = "h"
-    n += 
+    n += deal_card
     display_card_total(n)
+    n
   else
     invalid_command
     prompt_user
   end
   display_card_total(n)
+  n
 end
 
 def invalid_command
