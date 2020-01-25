@@ -27,9 +27,9 @@ def initial_round
   i = 0
   while i < 2 do
     card_total += deal_card
-    display_card_total(card_total)
     i += 1
   end
+  display_card_total(card_total)
   card_total
 end
 
