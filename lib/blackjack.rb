@@ -35,10 +35,10 @@ end
 
 def hit?(num)
   prompt_user
-  get_user_input
-  if get_user_input = "s"
+  answer = get_user_input
+  if answer = "s"
     return display_card_total(num)
-  elsif get_user_input = "h"
+  elsif answer = "h"
     return display_card_total(num)
   else
     return invalid_command
