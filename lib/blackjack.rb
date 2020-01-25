@@ -44,7 +44,6 @@ def hit?(n)
     invalid_command
     prompt_user
   end
-  display_card_total(n)
   n
 end
 
